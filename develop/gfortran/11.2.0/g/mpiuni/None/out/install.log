@@ -1,0 +1,15 @@
+ 
+Installing ESMF:
+ 
+mkdir -p /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/src/include/NUOPC.h /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/src/include/ESMC.h /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/src/include/ESMC_*.h /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/build_config/Unicos.gfortran.default/ESMC_Conf.h /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+cp -fr /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/src/addon/ESMX /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/include
+mkdir -p /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/mod/modg/Unicos.gfortran.64.mpiuni.default
+cp -f /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/mod/modg/Unicos.gfortran.64.mpiuni.default/*.mod /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/mod/modg/Unicos.gfortran.64.mpiuni.default
+mkdir -p /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpiuni.default
+cp -f /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/lib/libg/Unicos.gfortran.64.mpiuni.default/libesmf*.* /tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/DEFAULTINSTALLDIR/lib/libg/Unicos.gfortran.64.mpiuni.default
+cp: cannot stat '/tmp/gfortran_11.2.0_mpiuni_g_develop/esmf/lib/libg/Unicos.gfortran.64.mpiuni.default/libesmf*.*': No such file or directory
+make: *** [makefile:817: install] Error 1
