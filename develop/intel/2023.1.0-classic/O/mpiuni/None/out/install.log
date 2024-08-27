@@ -1,0 +1,15 @@
+ 
+Installing ESMF:
+ 
+mkdir -p /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/src/include/NUOPC.h /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/src/include/ESMC.h /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/src/include/ESMC_*.h /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/include
+cp -f /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/build_config/Unicos.intel.default/ESMC_Conf.h /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/include
+cp -fr /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/src/addon/ESMX /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/include
+mkdir -p /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/mod/modO/Unicos.intel.64.mpiuni.default
+cp -f /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/mod/modO/Unicos.intel.64.mpiuni.default/*.mod /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/mod/modO/Unicos.intel.64.mpiuni.default
+mkdir -p /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Unicos.intel.64.mpiuni.default
+cp -f /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/lib/libO/Unicos.intel.64.mpiuni.default/libesmf*.* /tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/DEFAULTINSTALLDIR/lib/libO/Unicos.intel.64.mpiuni.default
+cp: cannot stat '/tmp/intel_2023.1.0-classic_mpiuni_O_develop/esmf/lib/libO/Unicos.intel.64.mpiuni.default/libesmf*.*': No such file or directory
+make: *** [makefile:817: install] Error 1
