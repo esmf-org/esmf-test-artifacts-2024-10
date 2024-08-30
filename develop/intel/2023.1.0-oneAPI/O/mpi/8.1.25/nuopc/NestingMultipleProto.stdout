@@ -1,0 +1,76 @@
+2024-08-30 05:46:40
+slurmstepd: error: couldn't chdir to `/tmp/intel_2023.1.0-oneAPI_mpi_O_develop/nuopc-app-prototypes/NestingMultipleProto': No such file or directory: going to /tmp instead
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  00001505EEBF2910  Unknown               Unknown  Unknown
+mainApp            0000000000443AC3  Unknown               Unknown  Unknown
+mainApp            0000000000444A90  Unknown               Unknown  Unknown
+mainApp            0000000000443C35  Unknown               Unknown  Unknown
+libesmf.so         00001505F3CB7101  f_esmf_compcollec     Unknown  Unknown
+libesmf.so         00001505F3B0FDFF  _ZN5ESMCI2VM8fina     Unknown  Unknown
+libesmf.so         00001505F3AEDA75  c_esmc_vmfinalize     Unknown  Unknown
+libesmf.so         00001505F420D7EC  esmf_vmmod_mp_esm     Unknown  Unknown
+libesmf.so         00001505F4015A3B  esmf_initmod_mp_e     Unknown  Unknown
+mainApp            0000000000417C53  Unknown               Unknown  Unknown
+mainApp            00000000004175BD  Unknown               Unknown  Unknown
+libc-2.31.so       00001505EEA1A24D  __libc_start_main     Unknown  Unknown
+mainApp            00000000004174EA  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  000014FAAABF2910  Unknown               Unknown  Unknown
+mainApp            0000000000443A90  Unknown               Unknown  Unknown
+mainApp            0000000000444A90  Unknown               Unknown  Unknown
+mainApp            0000000000443C35  Unknown               Unknown  Unknown
+libesmf.so         000014FAAFAFA101  f_esmf_compcollec     Unknown  Unknown
+libesmf.so         000014FAAF952DFF  _ZN5ESMCI2VM8fina     Unknown  Unknown
+libesmf.so         000014FAAF930A75  c_esmc_vmfinalize     Unknown  Unknown
+libesmf.so         000014FAB00507EC  esmf_vmmod_mp_esm     Unknown  Unknown
+libesmf.so         000014FAAFE58A3B  esmf_initmod_mp_e     Unknown  Unknown
+mainApp            0000000000417C53  Unknown               Unknown  Unknown
+mainApp            00000000004175BD  Unknown               Unknown  Unknown
+libc-2.31.so       000014FAAAA1A24D  __libc_start_main     Unknown  Unknown
+mainApp            00000000004174EA  Unknown               Unknown  Unknown
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  0000148D93BF2910  Unknown               Unknown  Unknown
+mainApp            0000000000443AD1  Unknown               Unknown  Unknown
+mainApp            0000000000444A90  Unknown               Unknown  Unknown
+mainApp            0000000000443C35  Unknown               Unknown  Unknown
+libesmf.so         0000148D98BF0101  f_esmf_compcollec     Unknown  Unknown
+libesmf.so         0000148D98A48DFF  _ZN5ESMCI2VM8fina     Unknown  Unknown
+libesmf.so         0000148D98A26A75  c_esmc_vmfinalize     Unknown  Unknown
+libesmf.so         0000148D991467EC  esmf_vmmod_mp_esm     Unknown  Unknown
+libesmf.so         0000148D98F4EA3B  esmf_initmod_mp_e     Unknown  Unknown
+mainApp            0000000000417C53  Unknown               Unknown  Unknown
+mainApp            00000000004175BD  Unknown               Unknown  Unknown
+libc-2.31.so       0000148D93A1A24D  __libc_start_main     Unknown  Unknown
+mainApp            00000000004174EA  Unknown               Unknown  Unknown
+srun: error: nid006659: tasks 1-3: Exited with exit code 174
+srun: Terminating StepId=29965065.387
+slurmstepd: error: *** STEP 29965065.387 ON nid006659 CANCELLED AT 2024-08-30T13:53:32 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+libpthread-2.31.s  0000154C01FF2910  Unknown               Unknown  Unknown
+libc-2.31.so       0000154C01EE1AF7  __sched_yield         Unknown  Unknown
+libmpi_intel.so.1  0000154C04301ADE  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C0509DA16  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C050B0169  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C04FBFC82  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C03691011  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C03691138  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C0529E4CB  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C03691200  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C052949D2  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C050E0E15  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C05427EDF  Unknown               Unknown  Unknown
+libmpi_intel.so.1  0000154C03B335BC  MPI_Finalize          Unknown  Unknown
+libesmf.so         0000154C06D09DDF  _ZN5ESMCI3VMK8fin     Unknown  Unknown
+libesmf.so         0000154C06D26EF2  _ZN5ESMCI2VM8fina     Unknown  Unknown
+libesmf.so         0000154C06D04A75  c_esmc_vmfinalize     Unknown  Unknown
+libesmf.so         0000154C074247EC  esmf_vmmod_mp_esm     Unknown  Unknown
+libesmf.so         0000154C0722CA3B  esmf_initmod_mp_e     Unknown  Unknown
+mainApp            0000000000417C53  Unknown               Unknown  Unknown
+mainApp            00000000004175BD  Unknown               Unknown  Unknown
+libc-2.31.so       0000154C01E1A24D  __libc_start_main     Unknown  Unknown
+mainApp            00000000004174EA  Unknown               Unknown  Unknown
+srun: error: nid006659: task 0: Exited with exit code 1
