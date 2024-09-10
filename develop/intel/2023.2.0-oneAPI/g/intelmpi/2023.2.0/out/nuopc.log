@@ -1,0 +1,1527 @@
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:18 UTC 2024
+STARTING: AsyncIOBlockingProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f asyncIOApp *.o *.mod
+c     model.F90
+make: c: Command not found
+make: [Makefile:39: model.o] Error 127 (ignored)
+c     io.F90
+make: c: Command not found
+make: [Makefile:39: io.o] Error 127 (ignored)
+c     asyncIODriver.F90
+make: c: Command not found
+make: [Makefile:39: asyncIODriver.o] Error 127 (ignored)
+c     asyncIOApp.F90
+make: c: Command not found
+make: [Makefile:39: asyncIOApp.o] Error 127 (ignored)
+o asyncIOApp asyncIOApp.o asyncIODriver.o model.o io.o 
+make: o: Command not found
+make: [Makefile:50: asyncIOApp] Error 127 (ignored)
++ -np 4 ./asyncIOApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AsyncIOBlockingProto
+Tue Sep 10 07:32:18 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:18 UTC 2024
+STARTING: AsyncIONonblockingProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f asyncIOApp *.o *.mod
+c     model.F90
+make: c: Command not found
+make: [Makefile:39: model.o] Error 127 (ignored)
+c     io.F90
+make: c: Command not found
+make: [Makefile:39: io.o] Error 127 (ignored)
+c     conn.F90
+make: c: Command not found
+make: [Makefile:39: conn.o] Error 127 (ignored)
+c     asyncIODriver.F90
+make: c: Command not found
+make: [Makefile:39: asyncIODriver.o] Error 127 (ignored)
+c     asyncIOApp.F90
+make: c: Command not found
+make: [Makefile:39: asyncIOApp.o] Error 127 (ignored)
+o asyncIOApp asyncIOApp.o asyncIODriver.o model.o io.o conn.o 
+make: o: Command not found
+make: [Makefile:50: asyncIOApp] Error 127 (ignored)
++ -np 4 ./asyncIOApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AsyncIONonblockingProto
+Tue Sep 10 07:32:18 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:18 UTC 2024
+STARTING: AtmOcnConOptsProto
+rm -rf PET*.ESMF_LogFile traceout *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnConOptsProto
+Tue Sep 10 07:32:18 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:18 UTC 2024
+STARTING: AtmOcnConProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     conn.F90
+make: c: Command not found
+make: [Makefile:39: conn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o conn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnConProto
+Tue Sep 10 07:32:18 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:18 UTC 2024
+STARTING: AtmOcnCplListProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnCplListProto
+Tue Sep 10 07:32:18 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:18 UTC 2024
+STARTING: AtmOcnCplSetProto
+rm -f PET*.ESMF_LogFile err out core* *.nc *.stdout
+rm -f esmApp *.o *.mod
+g -c     atm.F90
+make: g: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+g -c     ocn.F90
+make: g: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+g -c     esm.F90
+make: g: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+g -c     esmApp.F90
+make: g: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnCplSetProto
+Tue Sep 10 07:32:18 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:18 UTC 2024
+STARTING: AtmOcnFDSynoProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnFDSynoProto
+Tue Sep 10 07:32:18 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:18 UTC 2024
+STARTING: AtmOcnIceSimpleImplicitProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     ice.F90
+make: c: Command not found
+make: [Makefile:39: ice.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o ice.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnIceSimpleImplicitProto
+Tue Sep 10 07:32:18 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnImplicitProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnImplicitProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnLndProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     lnd.F90
+make: c: Command not found
+make: [Makefile:39: lnd.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o lnd.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnLndProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnLogNoneProto
+rm -rf PET*.ESMF_LogFile traceout *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnLogNoneProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnMedIngestFromConfigProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     med.F90
+make: c: Command not found
+make: [Makefile:39: med.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnMedIngestFromConfigProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnMedIngestFromInternalProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     med.F90
+make: c: Command not found
+make: [Makefile:39: med.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnMedIngestFromInternalProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnMedPetListProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     med.F90
+make: c: Command not found
+make: [Makefile:39: med.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnMedPetListProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnMedPetListTimescalesProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     med.F90
+make: c: Command not found
+make: [Makefile:39: med.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnMedPetListTimescalesProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnMedPetListTimescalesSplitFastProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     med.F90
+make: c: Command not found
+make: [Makefile:39: med.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnMedPetListTimescalesSplitFastProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnMedProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     med.F90
+make: c: Command not found
+make: [Makefile:39: med.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o med.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnMedProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnMirrorFieldsProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnMirrorFieldsProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnPetListProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnPetListProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnProto
+rm -rf PET*.ESMF_LogFile traceout *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnRtmTwoTimescalesProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     rtm.F90
+make: c: Command not found
+make: [Makefile:39: rtm.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o rtm.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnRtmTwoTimescalesProto
+Tue Sep 10 07:32:19 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:19 UTC 2024
+STARTING: AtmOcnScalarProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnScalarProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: AtmOcnSelectProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     atmA.F90
+make: c: Command not found
+make: [Makefile:54: atmA.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     atmB.F90
+make: c: Command not found
+make: [Makefile:54: atmB.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     ocnA.F90
+make: c: Command not found
+make: [Makefile:54: ocnA.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     ocnB.F90
+make: c: Command not found
+make: [Makefile:54: ocnB.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     esm.F90
+make: c: Command not found
+make: [Makefile:54: esm.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_A -DWITH_OCN_B     esmApp.F90
+make: c: Command not found
+make: [Makefile:54: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atmA.o atmB.o ocnA.o ocnB.o 
+make: o: Command not found
+make: [Makefile:65: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+
+rm -f esmApp *.o *.mod
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     atmA.F90
+make: c: Command not found
+make: [Makefile:54: atmA.o] Error 127 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     atmB.F90
+make: c: Command not found
+make: [Makefile:54: atmB.o] Error 127 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     ocnA.F90
+make: c: Command not found
+make: [Makefile:54: ocnA.o] Error 127 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     ocnB.F90
+make: c: Command not found
+make: [Makefile:54: ocnB.o] Error 127 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     esm.F90
+make: c: Command not found
+make: [Makefile:54: esm.o] Error 127 (ignored)
+c -DWITH_ATM_B -DWITH_OCN_A -DWITH_OCN_B     esmApp.F90
+make: c: Command not found
+make: [Makefile:54: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atmA.o atmB.o ocnA.o ocnB.o 
+make: o: Command not found
+make: [Makefile:65: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+
+rm -f esmApp *.o *.mod
+c -DWITH_ATM_A -DWITH_OCN_B     atmA.F90
+make: c: Command not found
+make: [Makefile:54: atmA.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     atmB.F90
+make: c: Command not found
+make: [Makefile:54: atmB.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     ocnA.F90
+make: c: Command not found
+make: [Makefile:54: ocnA.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     ocnB.F90
+make: c: Command not found
+make: [Makefile:54: ocnB.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     esm.F90
+make: c: Command not found
+make: [Makefile:54: esm.o] Error 127 (ignored)
+c -DWITH_ATM_A -DWITH_OCN_B     esmApp.F90
+make: c: Command not found
+make: [Makefile:54: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atmA.o atmB.o ocnA.o ocnB.o 
+make: o: Command not found
+make: [Makefile:65: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnSelectProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: AtmOcnSimpleImplicitProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnSimpleImplicitProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: AtmOcnTransferGridProto
+rm -f PET*.ESMF_LogFile *.nc *.vtk *.stdout fort.*
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnTransferGridProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: AtmOcnTransferLocStreamProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnTransferLocStreamProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: AtmOcnTransferMeshProto
+rm -f PET*.ESMF_LogFile field*.nc *.vtk *.stdout fort.*
+rm -f esmApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: AtmOcnTransferMeshProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: CustomFieldDictionaryProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= model.F90
+make: c: Command not found
+make: [Makefile:39: model.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: Command not found
+make: [Makefile:39: driver.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= util.F90
+make: c: Command not found
+make: [Makefile:39: util.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driver.o model.o util.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: CustomFieldDictionaryProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: DriverInDriverDataDepProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driverChildComp.F90
+make: c: Command not found
+make: [Makefile:39: driverChildComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driverParentComp.F90
+make: c: Command not found
+make: [Makefile:39: driverParentComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driverParentComp.o driverChildComp.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: DriverInDriverDataDepProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: DriverInDriverProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driverChildComp.F90
+make: c: Command not found
+make: [Makefile:39: driverChildComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driverParentComp.F90
+make: c: Command not found
+make: [Makefile:39: driverParentComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driverParentComp.o driverChildComp.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: DriverInDriverProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: DynPhyProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     dyn.F90
+make: c: Command not found
+make: [Makefile:39: dyn.o] Error 127 (ignored)
+c     phy.F90
+make: c: Command not found
+make: [Makefile:39: phy.o] Error 127 (ignored)
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o atm.o dyn.o phy.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: DynPhyProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: ExternalDriverAPIProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f externalApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     externalApp.F90
+make: c: Command not found
+make: [Makefile:39: externalApp.o] Error 127 (ignored)
+o externalApp externalApp.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: externalApp] Error 127 (ignored)
++ -np 4 ./externalApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ExternalDriverAPIProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: ExternalDriverAPIWeakCplDAProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f externalApp *.o *.mod
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     nuopc_da.F90
+make: c: Command not found
+make: [Makefile:39: nuopc_da.o] Error 127 (ignored)
+c     atmDA.F90
+make: c: Command not found
+make: [Makefile:39: atmDA.o] Error 127 (ignored)
+c     ocnDA.F90
+make: c: Command not found
+make: [Makefile:39: ocnDA.o] Error 127 (ignored)
+c     externalApp.F90
+make: c: Command not found
+make: [Makefile:39: externalApp.o] Error 127 (ignored)
+o externalApp externalApp.o atmDA.o ocnDA.o nuopc_da.o esm.o atm.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: externalApp] Error 127 (ignored)
++ -np 4 ./externalApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ExternalDriverAPIWeakCplDAProto
+Tue Sep 10 07:32:20 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:20 UTC 2024
+STARTING: GenericMediatorProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f app *.o *.mod
+c     mediator.F90
+make: c: Command not found
+make: [Makefile:39: mediator.o] Error 127 (ignored)
+c     modelA.F90
+make: c: Command not found
+make: [Makefile:39: modelA.o] Error 127 (ignored)
+c     modelB.F90
+make: c: Command not found
+make: [Makefile:39: modelB.o] Error 127 (ignored)
+c     driver.F90
+make: c: Command not found
+make: [Makefile:39: driver.o] Error 127 (ignored)
+c     app.F90
+make: c: Command not found
+make: [Makefile:39: app.o] Error 127 (ignored)
+o app app.o driver.o mediator.o modelA.o modelB.o 
+make: o: Command not found
+make: [Makefile:50: app] Error 127 (ignored)
++ -np 4 ./app
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: GenericMediatorProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: HierarchyProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f esmApp *.o *.mod
+c     dyn.F90
+make: c: Command not found
+make: [Makefile:39: dyn.o] Error 127 (ignored)
+c     phy.F90
+make: c: Command not found
+make: [Makefile:39: phy.o] Error 127 (ignored)
+c     atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     ocn.F90
+make: c: Command not found
+make: [Makefile:39: ocn.o] Error 127 (ignored)
+c     esm.F90
+make: c: Command not found
+make: [Makefile:39: esm.o] Error 127 (ignored)
+c     esmApp.F90
+make: c: Command not found
+make: [Makefile:39: esmApp.o] Error 127 (ignored)
+o esmApp esmApp.o esm.o atm.o dyn.o phy.o ocn.o 
+make: o: Command not found
+make: [Makefile:50: esmApp] Error 127 (ignored)
++ -np 4 ./esmApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: HierarchyProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: NamespaceProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= atm.F90
+make: c: Command not found
+make: [Makefile:39: atm.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= med.F90
+make: c: Command not found
+make: [Makefile:39: med.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: Command not found
+make: [Makefile:39: driver.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driver.o atm.o med.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: NamespaceProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: NestingMultipleProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= advectDiffComp.F90
+make: c: Command not found
+make: [Makefile:39: advectDiffComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driverComp.F90
+make: c: Command not found
+make: [Makefile:39: driverComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driverComp.o advectDiffComp.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: NestingMultipleProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: NestingSingleProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= advectDiffComp.F90
+make: c: Command not found
+make: [Makefile:39: advectDiffComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driverComp.F90
+make: c: Command not found
+make: [Makefile:39: driverComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driverComp.o advectDiffComp.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: NestingSingleProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: NestingTelescopeMultipleProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= advectDiffComp.F90
+make: c: Command not found
+make: [Makefile:39: advectDiffComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driverComp.F90
+make: c: Command not found
+make: [Makefile:39: driverComp.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driverComp.o advectDiffComp.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: NestingTelescopeMultipleProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: SingleModelProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= model.F90
+make: c: Command not found
+make: [Makefile:39: model.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: Command not found
+make: [Makefile:39: driver.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driver.o model.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: SingleModelProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: SingleModelOpenMPProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= model.F90
+make: c: Command not found
+make: [Makefile:39: model.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: Command not found
+make: [Makefile:39: driver.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driver.o model.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: SingleModelOpenMPProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: SingleModelOpenMPUnawareProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -f mainApp *.o *.mod
+c     -DESMF_VERSION_MAJOR= model.F90
+make: c: Command not found
+make: [Makefile:39: model.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= driver.F90
+make: c: Command not found
+make: [Makefile:39: driver.o] Error 127 (ignored)
+c     -DESMF_VERSION_MAJOR= mainApp.F90
+make: c: Command not found
+make: [Makefile:39: mainApp.o] Error 127 (ignored)
+o mainApp mainApp.o driver.o model.o 
+make: o: Command not found
+make: [Makefile:50: mainApp] Error 127 (ignored)
++ -np 4 ./mainApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: SingleModelOpenMPUnawareProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: ESMX_StartHereProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+rm -f ESMF_Profile.summary
+/ESMX_Builder -v
+make: /ESMX_Builder: Command not found
+make: *** [Makefile:36: install/bin/esmx_app] Error 127
++ -np 4 ./install/bin/esmx_app
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_StartHereProto
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: ESMX_StartHereProto-Step1
+rm -f PET*.ESMF_LogFile *.nc *.stdout
++ -np 4 ./install/bin/esmx_app esmxRunStep1.yaml
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_StartHereProto-Step1
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: ESMX_StartHereProto-Step2
+rm -f PET*.ESMF_LogFile *.nc *.stdout
++ -np 4 ./install/bin/esmx_app esmxRunStep2.yaml
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_StartHereProto-Step2
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: ESMX_StartHereProto-Step3
+rm -f PET*.ESMF_LogFile *.nc *.stdout
++ -np 4 ./install/bin/esmx_app esmxRunStep3.yaml
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_StartHereProto-Step3
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: ESMX_StartHereProto-Step4
+rm -f PET*.ESMF_LogFile *.nc *.stdout
++ -np 4 ./install/bin/esmx_app esmxRunStep4.yaml
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_StartHereProto-Step4
+Tue Sep 10 07:32:21 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:21 UTC 2024
+STARTING: ESMX_SingleModelInFortranProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+/ESMX_Builder -v
+make: /ESMX_Builder: Command not found
+make: *** [Makefile:36: install/bin/esmx_app] Error 127
++ -np 4 ./install/bin/esmx_app
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+---------------------------------------------------------------------------
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+/ESMX_Builder -v esmxBuildDL.yaml
+make: /ESMX_Builder: Command not found
+make: *** [Makefile:39: DL] Error 127
++ -np 4 ./install/bin/esmx_app esmxRunDL.yaml
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_SingleModelInFortranProto
+Tue Sep 10 07:32:22 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:22 UTC 2024
+STARTING: ESMX_SingleModelInCProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+/ESMX_Builder -v esmxBuildDL.yaml
+make: /ESMX_Builder: Command not found
+make: *** [Makefile:39: DL] Error 127
++ -np 4 ./install/bin/esmx_app esmxRunDL.yaml
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_SingleModelInCProto
+Tue Sep 10 07:32:22 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:22 UTC 2024
+STARTING: ESMX_AtmOcnProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+cd TaWaS; make distclean
+make[1]: Entering directory '/scratch2/NCEPDEV/stmp1/Gerhard.Theurich/ESMF-Nightly-Testing/intel_2023.2.0-oneAPI_intelmpi_g_develop/nuopc-app-prototypes/ESMX_AtmOcnProto/TaWaS'
+rm -f PET*.ESMF_LogFile
+rm -f *.o *.a *.so *.mod *.mk tawas.cmake
+make[1]: Leaving directory '/scratch2/NCEPDEV/stmp1/Gerhard.Theurich/ESMF-Nightly-Testing/intel_2023.2.0-oneAPI_intelmpi_g_develop/nuopc-app-prototypes/ESMX_AtmOcnProto/TaWaS'
+/ESMX_Builder -v
+make: /ESMX_Builder: Command not found
+make: *** [Makefile:36: install/bin/esmx_app] Error 127
++ -np 4 ./install/bin/esmx_app
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+---------------------------------------------------------------------------
+rm -f PET*.ESMF_LogFile *.nc *.stdout
++ -np 4 ./install/bin/esmx_app esmxRunAlt.yaml
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_AtmOcnProto
+Tue Sep 10 07:32:22 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:22 UTC 2024
+STARTING: ESMX_AtmOcnFortranAndCProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+/ESMX_Builder -v
+make: /ESMX_Builder: Command not found
+make: *** [Makefile:36: install/bin/esmx_app] Error 127
++ -np 4 ./install/bin/esmx_app
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_AtmOcnFortranAndCProto
+Tue Sep 10 07:32:22 UTC 2024
+---------------------------------------------------------------------------
+
+---------------------------------------------------------------------------
+Tue Sep 10 07:32:22 UTC 2024
+STARTING: ESMX_ExternalDriverAPIProto
+rm -f PET*.ESMF_LogFile *.nc *.stdout
+rm -rf build install
+cd TaWaS; make distclean
+make[1]: Entering directory '/scratch2/NCEPDEV/stmp1/Gerhard.Theurich/ESMF-Nightly-Testing/intel_2023.2.0-oneAPI_intelmpi_g_develop/nuopc-app-prototypes/ESMX_ExternalDriverAPIProto/TaWaS'
+rm -f PET*.ESMF_LogFile
+rm -f *.o *.a *.so *.mod *.mk tawas.cmake
+make[1]: Leaving directory '/scratch2/NCEPDEV/stmp1/Gerhard.Theurich/ESMF-Nightly-Testing/intel_2023.2.0-oneAPI_intelmpi_g_develop/nuopc-app-prototypes/ESMX_ExternalDriverAPIProto/TaWaS'
+cmake -S. -Bbuild -DESMF_ESMXDIR= -DCMAKE_INSTALL_PREFIX=install
+CMake Error at CMakeLists.txt:7 (find_package):
+  No "FindESMF.cmake" found in CMAKE_MODULE_PATH.
+
+
+CMake Warning (dev) at CMakeLists.txt:7 (find_package):
+  FindESMF.cmake must either be part of this project itself, in this case
+  adjust CMAKE_MODULE_PATH so that it points to the correct location inside
+  its source tree.
+
+  Or it must be installed by a package which has already been found via
+  find_package().  In this case make sure that package has indeed been found
+  and adjust CMAKE_MODULE_PATH to contain the location where that package has
+  installed FindESMF.cmake.  This must be a location provided by that
+  package.  This error in general means that the buildsystem of this project
+  is relying on a Find-module without ensuring that it is actually available.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring incomplete, errors occurred!
+make: *** [Makefile:36: install/bin/externalApp] Error 1
++ -np 4 ./install/bin/externalApp
++ local result=127
++ set +x
+cat: 'PET*.ESMF_LogFile': No such file or directory
+FINISHED: ESMX_ExternalDriverAPIProto
+Tue Sep 10 07:32:22 UTC 2024
+---------------------------------------------------------------------------
+
+Tue Sep 10 07:32:22 UTC 2024
+== TEST SUMMARY START ==
+FAIL: AsyncIOBlockingProto
+FAIL: AsyncIONonblockingProto
+FAIL: AtmOcnConOptsProto
+FAIL: AtmOcnConProto
+FAIL: AtmOcnCplListProto
+FAIL: AtmOcnCplSetProto
+FAIL: AtmOcnFDSynoProto
+FAIL: AtmOcnIceSimpleImplicitProto
+FAIL: AtmOcnImplicitProto
+FAIL: AtmOcnLndProto
+FAIL: AtmOcnLogNoneProto
+FAIL: AtmOcnMedIngestFromConfigProto
+FAIL: AtmOcnMedIngestFromInternalProto
+FAIL: AtmOcnMedPetListProto
+FAIL: AtmOcnMedPetListTimescalesProto
+FAIL: AtmOcnMedPetListTimescalesSplitFastProto
+FAIL: AtmOcnMedProto
+FAIL: AtmOcnMirrorFieldsProto
+FAIL: AtmOcnPetListProto
+FAIL: AtmOcnProto
+FAIL: AtmOcnRtmTwoTimescalesProto
+FAIL: AtmOcnScalarProto
+FAIL: AtmOcnSelectProto
+FAIL: AtmOcnSelectProto
+FAIL: AtmOcnSelectProto
+FAIL: AtmOcnSimpleImplicitProto
+FAIL: AtmOcnTransferGridProto
+FAIL: AtmOcnTransferLocStreamProto
+FAIL: AtmOcnTransferMeshProto
+FAIL: CustomFieldDictionaryProto
+FAIL: DriverInDriverDataDepProto
+FAIL: DriverInDriverProto
+FAIL: DynPhyProto
+FAIL: ExternalDriverAPIProto
+FAIL: ExternalDriverAPIWeakCplDAProto
+FAIL: GenericMediatorProto
+FAIL: HierarchyProto
+FAIL: NamespaceProto
+FAIL: NestingMultipleProto
+FAIL: NestingSingleProto
+FAIL: NestingTelescopeMultipleProto
+FAIL: SingleModelProto
+FAIL: SingleModelOpenMPProto
+FAIL: SingleModelOpenMPUnawareProto
+FAIL: ESMX_StartHereProto
+FAIL: ESMX_StartHereProto-Step1
+FAIL: ESMX_StartHereProto-Step2
+FAIL: ESMX_StartHereProto-Step3
+FAIL: ESMX_StartHereProto-Step4
+FAIL: ESMX_SingleModelInFortranProto
+FAIL: ESMX_SingleModelInFortranProto-DL
+FAIL: ESMX_SingleModelInCProto-DL
+FAIL: ESMX_AtmOcnProto
+FAIL: ESMX_AtmOcnProto-Alt
+FAIL: ESMX_AtmOcnFortranAndCProto
+FAIL: ESMX_ExternalDriverAPIProto
+== TEST SUMMARY STOP ==
+Tue Sep 10 07:32:22 UTC 2024
+
+---------------------------------------------------------------------------
+grep: */PET*.ESMF_LogFile: No such file or directory
