@@ -1,0 +1,9 @@
+find . -name "*ESMF_LogFile*" -exec rm -f {} \; || :
+find . -name "*.report.json" -exec rm -rf {} \; || :
+find . -name "*.test" -exec rm -rf {} \; || :
+bash src/esmpy/test/test_all.bash "mpiexec"
+Testing ESMPy 8.7.0
+mpiexec -np 1 python3 -m pytest -vs --json-report --json-report-summary > esmpy8.7.0-petx1.test 2>&1
+mpiexec -np 4 python3 -m pytest -vs --json-report --json-report-summary > esmpy8.7.0-petx4.test 2>&1
+mpiexec -np 6 python3 -m pytest -vs --json-report --json-report-summary > esmpy8.7.0-petx6.test 2>&1
+Report is in esmpy8.7.0-petx6.test
